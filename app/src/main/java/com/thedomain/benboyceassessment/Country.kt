@@ -6,7 +6,8 @@ class Country (
     var currency: Currency,
     var flag: String,
     var language: Language,
-    var name: String
+    var name: String,
+    var region: String
 ) {
     /**
      * Country object contains:
@@ -17,4 +18,8 @@ class Country (
      * Language - Object class
      * name
      */
+
+    override fun toString(): String {
+        return "Country(Region='$region', capital='$capital', code='$code', currency=$currency, flag='$flag', language=$language, name='$name')"
+    }
 }
